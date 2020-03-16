@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="Этo пример кода HTML5" />
+<meta name="keywords" content="HTML5, CSS3, Javascript" />
+<title>Изучение vue.js - Директива v-show vs v-if</title>
+    <style>
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 40px;
+        }
+        .red {background: red;}
+        .blue {background: blue;}
+        .green {background: green;}
+    </style>
+</head>
+<body><!-- Тело документа -->
+<div id="app">
+    <h1 v-show="isVisible">I am visible</h1>
+    <h2 v-show="!isVisible">Yan can't see me!</h2>
+    <hr>
+    <button @click="isVisible = !isVisible">Toggle</button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+	new Vue({
+		el: '#app',
+		data: {
+            isVisible: true
+        },
+        computed: {
+
+        },
+        methods: {
+
+        }
+	})
+</script>
+</body>
+</html>

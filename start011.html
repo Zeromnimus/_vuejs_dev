@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="Этo пример кода HTML5" />
+<meta name="keywords" content="HTML5, CSS3, Javascript" />
+<title>Изучение vue.js - Работа с CSS классами</title>
+    <style>
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 40px;
+        }
+        .red {background: red;}
+        .blue {background: blue;}
+        .green {background: green;}
+    </style>
+</head>
+<body><!-- Тело документа -->
+<div id="app">
+    <div class="circle" 
+        @click="isActiv = !isActiv"
+        :class="getCssClasses"
+    ></div>
+    <div class="circle" :class="[color, {'red': isActiv}]"></div>
+
+    <input type="text" v-model="color">
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+	new Vue({
+		el: '#app',
+		data: {
+            isActiv: false,
+            color: 'blue'
+        },
+        computed: {
+            getCssClasses: function() {
+                return {
+                    red: this.isActiv,
+                    green: !this.isActiv
+                }
+            }
+        },
+        methods: {
+
+        }
+	})
+</script>
+</body>
+</html>

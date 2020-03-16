@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="Этo пример кода HTML5" />
+<meta name="keywords" content="HTML5, CSS3, Javascript" />
+<title>Изучение vue.js - Модель для работы с формами</title>
+</head>
+<body><!-- Тело документа -->
+<div id="app">
+
+    <input type="text" v-model.lazy="inputValue">
+
+    <h2>{{ inputValue }}</h2>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+	new Vue({
+		el: '#app',
+		data: {
+            inputValue: 'Initial value'
+        }
+	})
+</script>
+</body>
+</html>

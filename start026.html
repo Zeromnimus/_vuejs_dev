@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="Этo пример кода HTML5" />
+<meta name="keywords" content="HTML5, CSS3, Javascript" />
+<title>Изучение vue.js - Ренистрация компонентов во вью</title>
+
+</head>
+<body><!-- Тело документа -->
+<div id="app">
+		<my-counter v-for="i in 2"></my-counter>
+</div>
+<hr>
+<div id="app2">
+		<my-counter></my-counter>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+	var component = {
+		template: `
+			<div style="border: 1px solid black; padding: 10px;">
+				<h2>Counter: {{ counter }} </h2>
+				<button @click="add">Add to counter</button>
+			</div>
+		`,
+		data: function(){
+			return {
+				counter: 0
+			}
+		},
+		methods: {
+			add: function () {
+				this.counter++
+			}
+		}
+	}
+
+	var vue = new Vue({
+        el: '#app',
+		components: {
+        	'my-counter': component
+		}
+	});
+	var vue2 = new Vue({
+        el: '#app2',
+		components: {
+			myCounter: component
+		}
+	});
+</script>
+</body>
+</html>

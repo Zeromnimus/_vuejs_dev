@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="Этo пример кода HTML5" />
+<meta name="keywords" content="HTML5, CSS3, Javascript" />
+<title>Изучение vue.js - Зачем нужны компоненты</title>
+
+</head>
+<body><!-- Тело документа -->
+<div id="app">
+	<div style="border: 1px solid black; padding: 10px;">
+		<h2>Counter: {{ counter }} </h2>
+		<button @click="counter++">Add to counter</button>
+	</div>	
+	<div style="border: 1px solid black; padding: 10px;">
+		<h2>Counter: {{ counter2 }} </h2>
+		<button @click="counter2++">Add to counter</button>
+	</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+	var vue = new Vue({
+        el: '#app',
+		data: {
+            counter: 0,
+			counter2: 0
+        },       
+	});
+</script>
+</body>
+</html>

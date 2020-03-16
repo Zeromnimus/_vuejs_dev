@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="Этo пример кода HTML5" />
+<meta name="keywords" content="HTML5, CSS3, Javascript" />
+<title>Изучение vue.js - Модификаторы событий клавиатуры</title>
+</head>
+<body><!-- Тело документа -->
+<div id="app">
+    <h2>
+        <a href="http://google.com" target="_blank" v-on:click.prevent="">GOOGLE</a>
+    </h2>
+    <h2 v-on:mousemove="handleMouseMove">
+        x: {{x}} \ y: {{y}}
+        <span v-on:mousemove.stop="">Not change</span>
+    </h2>
+    <hr>
+
+    <input type="text" v-on:keyup.enter.space="alertValue">
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+	new Vue({
+		el: '#app',
+		data: {
+            x:0,
+            y:0
+
+		},
+		methods: {
+            handleMouseMove: function(event) {
+                this.x = event.clientX
+                this.y = event.clientY
+            },
+            alertValue: function(event) {
+                alert(event.target.value)
+            }
+        }
+	})
+</script>
+</body>
+</html>

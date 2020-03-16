@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="Этo пример кода HTML5" />
+<meta name="keywords" content="HTML5, CSS3, Javascript" />
+<title>Изучение vue.js - Жизненный цикл</title>
+
+</head>
+<body><!-- Тело документа -->
+<div id="app">
+    <h2>{{ title }}</h2>
+
+    <button @click="title = 'Changed title'">Chaange</button>
+    <button @click="doDestroy">Destroy</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+	var vue = new Vue({
+        el: '#app',
+		data: {
+            title: 'Hello from Vue!!!!'
+        },
+        methods: {
+            doDestroy: function() {
+                this.$destroy()
+            }
+        },
+        beforeCreate: function() {
+            console.log('Before Create')
+        },
+        created: function() {
+            console.log('Created')
+        },
+        beforeMount: function() {
+            console.log('Before Mount')
+        },
+        mounted: function() {
+            console.log('Mounted')
+        },        
+        beforeUpdate: function() {
+            console.log('Before Update')
+        },        
+        updated: function() {
+            console.log('Updated')
+        },        
+        beforeDestroy: function() {
+            console.log('Before Destroy')
+        },        
+        destroyed: function() {
+            console.log('Destroyed')
+        },        
+	});
+</script>
+</body>
+</html>
