@@ -1,15 +1,8 @@
 <template>
   <div>
     <h2>{{title}}</h2>
-    <select v-model="socials">
-      <option
-        v-for="s in socialsList"
-        :selected="s == defaultSocials"
-      >{{ s }}</option>
-    </select>
-    <hr>
-    <p>{{ socials }}</p>
-
+    <input type="text" v-model.number="age">
+    <p>{{age}}</p>
   </div>
 </template>
 
@@ -17,12 +10,16 @@
   export default {
     data() {
       return {
-        title: 'Селекты VUE JS',
-        socialsList: ['instagram', 'vk','facebook'],
-        defaultSocials: 'vk',
-        socials: 'vk'
+        title: 'Числовой модификатор VUE JS',
+        age: 20
       }
     },
+    watch: {
+      age (value) {
+        console.log(value)
+        console.log(typeof value)
+      }
+    }
   }
 
 </script>
