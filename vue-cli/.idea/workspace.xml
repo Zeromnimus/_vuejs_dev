@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40b8db61-b502-45fb-8a79-7566c4eb9c27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vue-project/src/List.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-project/src/listMixin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-project/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-project/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-project/src/Car.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-project/src/Counter.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-project/src/color.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-project/src/List.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-project/src/listMixin.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-project/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-project/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584333657112</updated>
       <workItem from="1584333658407" duration="16944000" />
-      <workItem from="1584420432238" duration="4558000" />
+      <workItem from="1584420432238" duration="5152000" />
     </task>
     <servers />
   </component>
@@ -64,9 +61,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1192" y="285" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584349483926">
+    <state x="1192" y="285" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584425710542">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1192" y="285" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1584349483926" />
+    <state x="1192" y="285" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1584425710542" />
   </component>
 </project>
