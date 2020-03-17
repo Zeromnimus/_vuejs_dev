@@ -1,18 +1,32 @@
 <template>
   <div>
     <h2>{{title}}</h2>
-    <textarea v-model="textarea"></textarea>
-    <p>{{textarea}}</p>
-  </div>
+    <label>
+      <input type="checkbox" value="instagram" v-model="social"> Instagram
+    </label>
+    <label>
+      <input type="checkbox" value="vk" v-model="social"> Vk
+    </label>
+    <label>
+      <input type="checkbox" value="ok" v-model="social"> OK
+    </label>
 
+    <hr>
+
+    <ul>
+      <li v-for="s in social">{{s}}</li>
+    </ul>
+
+  </div>
 </template>
 
 <script>
   export default {
     data() {
       return {
-        title: 'Текстарея VUE JS',
-        textarea: 'Initial textarea'
+        title: 'Чекбоксы VUE JS',
+        social: ['vk'],
+        s: ''
       }
     },
   }
