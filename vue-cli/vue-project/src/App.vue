@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h2 v-colored:background.font = "'pink'">{{title}}</h2>
-    <h2 v-colored:color.delay.font = "'blue'">{{title}}</h2>
-    <hr>
-    <h2 v-font>Local Font Directive</h2>
+    <h2>{{title}}</h2>
+    <h2>{{title | lowercase }}</h2>
+    <h2>{{title | uppercase }}</h2>
+    <h2>{{title | uppercase | lowercase}}</h2>
   </div>
 
 </template>
@@ -12,18 +12,18 @@
 export default {
     data() {
       return {
-        title: 'Hello i am vue',
-
+        title: 'Hello I am Vue',
       }
     },
-    directives: {
-      font: {
-        bind(el, bindings, vnode) {
-          el.style.fontSize = '65px'
-        }
+    filters: {
+      lowercase(value) {
+        return value.toLowerCase()
       }
     }
-
   }
 
 </script>
+
+<style scoped>
+
+</style>

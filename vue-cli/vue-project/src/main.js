@@ -1,14 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
-import ColorDirective from "./color";
 
-Vue.directive('colored', ColorDirective)
+Vue.filter('uppercase', (value) => {
+  return value.toUpperCase()
+})
 
 new Vue({
   el: '#app',
-  render: function (h) {
-    return h(App)
-  }
+  render: h => h(App)
 })
 
 
