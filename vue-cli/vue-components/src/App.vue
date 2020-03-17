@@ -1,9 +1,14 @@
 <template>
   <div class="container">
-    <form action="#">
+    <form class="pt-3">
     <div class="form-group">
       <label for="email">Email</label>
-      <input type="email" id="email" class="form-control">
+      <input
+        type="email"
+        id="email"
+        class="form-control"
+        v-model="email"
+      >
     </div>
     </form>
   </div>
@@ -11,6 +16,10 @@
 
 <script>
 export default {
-
+data () {
+  return {
+    email: ''
+  }
+}
 }
 </script>
