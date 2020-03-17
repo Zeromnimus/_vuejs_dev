@@ -5,26 +5,21 @@
     <ul>
       <li v-for="name in filteredNames"> {{ name }}</li>
     </ul>
+    <hr>
+    <app-list></app-list>
   </div>
 
 </template>
 
 <script>
+  import ListMixin from './listMixin'
 export default {
     data() {
       return {
-        title: 'Фильтрация списков',
-        searchName: '',
-        names: ['Vlad', 'Max', 'Elena', 'Igor']
+        title: 'Использование миксинов VUE JS',
       }
     },
-    computed: {
-      filteredNames() {
-        return this.names.filter(name => {
-          return name.toLowerCase().indexOf(this.searchName.toLowerCase()) !== -1
-        })
-      }
-    },
+  mixins: [ListMixin],
     filters: {
       lowercase(value) {
         return value.toLowerCase()

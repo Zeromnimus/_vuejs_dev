@@ -2,13 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40b8db61-b502-45fb-8a79-7566c4eb9c27" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/vue-project/src/List.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-project/src/listMixin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-project/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-project/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-project/src/Car.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-project/src/Counter.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-project/src/color.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-project/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-project/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -42,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584333657112</updated>
       <workItem from="1584333658407" duration="16944000" />
-      <workItem from="1584420432238" duration="3068000" />
+      <workItem from="1584420432238" duration="4558000" />
     </task>
     <servers />
   </component>
