@@ -2,20 +2,20 @@
   <div>
     <h2>{{title}}</h2>
     <label>
-      <input type="checkbox" value="instagram" v-model="social"> Instagram
+      <input type="radio" value="instagram" v-model="social"> Instagram
     </label>
     <label>
-      <input type="checkbox" value="vk" v-model="social"> Vk
+      <input type="radio" value="vk" v-model="social"> Vk
     </label>
     <label>
-      <input type="checkbox" value="ok" v-model="social"> OK
+      <input type="radio" value="ok" v-model="social"> OK
     </label>
 
     <hr>
 
-    <ul>
-      <li v-for="s in social">{{s}}</li>
-    </ul>
+    <p>
+     {{social}}
+    </p>
 
   </div>
 </template>
@@ -24,8 +24,8 @@
   export default {
     data() {
       return {
-        title: 'Чекбоксы VUE JS',
-        social: ['vk'],
+        title: 'Радио кнопки VUE JS',
+        social: 'vk',
         s: ''
       }
     },
