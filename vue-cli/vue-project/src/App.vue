@@ -1,8 +1,8 @@
 <template>
   <div>
     <h2>{{title}}</h2>
-    <input type="text" v-model.lazy="name">
-    <p>{{name}}</p>
+    <textarea v-model="textarea"></textarea>
+    <p>{{textarea}}</p>
   </div>
 
 </template>
@@ -11,10 +11,20 @@
   export default {
     data() {
       return {
-        title: 'Текстовый инпут VUE JS',
-        name: 'Initial state'
+        title: 'Текстарея VUE JS',
+        textarea: 'Initial textarea'
       }
     },
   }
 
 </script>
+
+<style scoped>
+  textarea {
+    height: 100px;
+    width: 400px;
+  }
+  p {
+    white-space: pre;
+  }
+</style>
